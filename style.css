@@ -1,0 +1,25 @@
+header {
+    border-bottom:1px grey solid;
+    padding:20px;
+}
+
+nav {
+    border-right:1px grey solid;
+    float:left;
+    width:200px;
+    height:600px;
+}
+
+nav ol {
+    list-style:none;
+}
+
+article {
+    float:left;
+    padding:20px;
+}
+
+h2 {
+    font-size:30px;
+    color:red;
+}
