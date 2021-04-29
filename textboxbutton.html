@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <style>
+        .em {
+            text-decoration:underline;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <input type="button" value = "white" onclick = "alert('You just clicked white button')"/>    
+    <input type="text" onfocus = "alert('focused')"/> <!-- also can input onblur = "alert('blurred')" -->
+
+    <input type="text" id = "user_input"/>
+    <input type="button" value = "black" onclick = "alert(document.getElementById('user_input').value)">
+
+    <ol>
+        <li>html</li>
+        <li id = "target">css</li>
+        <li>javascript</li>
+    </ol>
+
+    <ul class = "em">
+        <li>Dog</li>
+        <li>Cat</li>
+        <li>Monkey</li>
+    </ul>
+
+    <input type="button" value = "emphasize" onclick = "document.getElementById('target').className='em'">
+</body>
+</html>

@@ -19,7 +19,16 @@ article {
     padding:20px;
 }
 
-h2 {
-    font-size:30px;
-    color:red;
+body.white {
+    background-color:white;
+    color:black;
+}
+
+body.black {
+    background-color:black;
+    color:white;
+}
+
+#theme {
+    float:right;
 }
