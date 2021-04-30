@@ -4,23 +4,31 @@
 	<meta charset = "utf-8">
 	<title>Learning JavaScript</title>
 	<link rel = "stylesheet" type = "text/css" href= "http://localhost/style.css">
-
 </head>
 <body id = "background">
 	<header>
+		<img src="https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/course/94.png" alt="Can't find image">
 		<h1><a href = "http://localhost/index.html">JavaScript</a></h1>
 	</header>
 	<nav>
 		<ol>
-			<li><a href = "page_jsintro.html">JavaScript란?</a></li>
-			<li><a href = "page_vc.html">변수와 상수</a></li>
-			<li><a href = "page_op.html">연산자</a></li>
+			<?php
+				echo file_get_contents('list.txt');
+			?>
 		</ol>
 	</nav>
 	<div id = "theme">
 		<input type="button" value = "white" onclick = "document.getElementById('background').className='white'"/>
 		<input type="button" value = "black" onclick = "document.getElementById('background').className='black'"/>
 	</div>
+
+	<article>
+		<?php
+			if(!empty($_GET['id'])) {
+				echo file_get_contents($_GET['id'].".txt");
+			}
+		?>
+	</article>
 	
 </body>
 </html>

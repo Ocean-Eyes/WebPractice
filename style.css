@@ -32,3 +32,8 @@ body.black {
 #theme {
     float:right;
 }
+
+header img {
+    float:right;
+    height:100px;
+}
